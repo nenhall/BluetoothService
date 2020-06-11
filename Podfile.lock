@@ -1,0 +1,28 @@
+PODS:
+  - IBAnimatable (6.1.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - SnapKit (5.0.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - IBAnimatable
+  - IQKeyboardManagerSwift
+  - SnapKit
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - IBAnimatable
+    - IQKeyboardManagerSwift
+    - SnapKit
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 7edcda7c0692fe69a88d8beacc1caefe74e5d41c
+
+COCOAPODS: 1.9.1
