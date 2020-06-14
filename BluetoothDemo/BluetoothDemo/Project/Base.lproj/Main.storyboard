@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="BluetoothService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-Dp-d0E" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="57" y="418" width="300" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="TEf-Li-zBo"/>
+                                    <constraint firstAttribute="height" constant="60" id="dxE-nZ-0zD"/>
+                                </constraints>
+                                <state key="normal" title="Bluetooth Central">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="2" y="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yz8-wD-acB" kind="custom" customClass="PresentOverCurrentContextSegue" customModule="IBAnimatable" id="tMO-42-R36"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ow3-0G-uX1" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="57" y="642" width="300" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Bluetooth Peripheral">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="2" y="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OXe-Dp-d0E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2Zq-Ow-LRf"/>
+                            <constraint firstItem="OXe-Dp-d0E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LMY-nj-7Y6"/>
+                            <constraint firstItem="ow3-0G-uX1" firstAttribute="centerX" secondItem="OXe-Dp-d0E" secondAttribute="centerX" id="XpX-up-tio"/>
+                            <constraint firstItem="ow3-0G-uX1" firstAttribute="height" secondItem="OXe-Dp-d0E" secondAttribute="height" id="dpo-MG-oAV"/>
+                            <constraint firstItem="ow3-0G-uX1" firstAttribute="width" secondItem="OXe-Dp-d0E" secondAttribute="width" id="kQi-qr-ogZ"/>
+                            <constraint firstItem="ow3-0G-uX1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="wPV-UV-yZQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+        <!--Peripheral List-->
+        <scene sceneID="zLW-Af-f7b">
+            <objects>
+                <viewController storyboardIdentifier="BLECentralController" id="OAz-wc-NEN" customClass="BLECentralController" customModule="BluetoothService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="scP-zi-Ing">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XqR-Jy-hvR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OAz-wc-NEN" id="gQ7-Tw-SS5"/>
+                                    <outlet property="delegate" destination="OAz-wc-NEN" id="9gs-hw-Zfj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XqR-Jy-hvR" firstAttribute="leading" secondItem="kNi-63-SxH" secondAttribute="leading" id="EFX-bV-BCy"/>
+                            <constraint firstItem="XqR-Jy-hvR" firstAttribute="top" secondItem="kNi-63-SxH" secondAttribute="top" id="OyJ-Q6-ccU"/>
+                            <constraint firstItem="kNi-63-SxH" firstAttribute="trailing" secondItem="XqR-Jy-hvR" secondAttribute="trailing" id="UBT-bj-n1a"/>
+                            <constraint firstItem="kNi-63-SxH" firstAttribute="bottom" secondItem="XqR-Jy-hvR" secondAttribute="bottom" id="r18-EA-G1m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kNi-63-SxH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Peripheral List" id="Lv3-73-5Af">
+                        <barButtonItem key="leftBarButtonItem" title="Back" springLoaded="YES" id="msP-2k-GXf">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="leftEvent:" destination="OAz-wc-NEN" id="Sk6-Sz-e40"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" springLoaded="YES" systemItem="search" id="ajG-KN-gbO">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="rightEvent:" destination="OAz-wc-NEN" id="cgl-Ul-gay"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="peripheralListView" destination="XqR-Jy-hvR" id="FQD-ph-RgR"/>
+                        <segue destination="PNw-7Z-4ok" kind="custom" identifier="showBLEDetailControl" customClass="PresentOverCurrentContextSegue" customModule="IBAnimatable" id="3CI-Kl-VEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tx7-yp-aDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="127"/>
+        </scene>
+        <!--Peripheral Detail-->
+        <scene sceneID="duJ-mw-u08">
+            <objects>
+                <viewController storyboardIdentifier="BLEDetailController" id="hU9-wJ-S7U" customClass="BLEDetailController" customModule="BluetoothService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VRc-c8-atT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="JU0-Sy-JCg" customClass="AnimatableTextView" customModule="IBAnimatable">
+                                <rect key="frame" x="20" y="466.5" width="374" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ILA-6R-dUC"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="alphabet" returnKeyType="done"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="command eg.: 0x00,0x01,0x02"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qjb-hv-b8Y">
+                                <rect key="frame" x="0.0" y="88" width="414" height="358.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWI-qI-UC7" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="20" y="610.5" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MOd-N1-3AG"/>
+                                </constraints>
+                                <state key="normal" title="Write Commad">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSa-Yf-ogd" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="20" y="546.5" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9Tc-bN-wze"/>
+                                </constraints>
+                                <state key="normal" title="Write Commad">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="writeCommand:" destination="hU9-wJ-S7U" eventType="touchUpInside" id="khA-hK-JuI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tWI-qI-UC7" firstAttribute="height" secondItem="nSa-Yf-ogd" secondAttribute="height" id="1p1-mx-oVG"/>
+                            <constraint firstItem="tWI-qI-UC7" firstAttribute="leading" secondItem="nSa-Yf-ogd" secondAttribute="leading" id="4Vs-In-0ZT"/>
+                            <constraint firstItem="qjb-hv-b8Y" firstAttribute="height" secondItem="VRc-c8-atT" secondAttribute="height" multiplier="0.4" id="6Mw-J5-464"/>
+                            <constraint firstItem="qjb-hv-b8Y" firstAttribute="leading" secondItem="aHt-eY-W7v" secondAttribute="leading" id="87q-AF-t9a"/>
+                            <constraint firstItem="tWI-qI-UC7" firstAttribute="leading" secondItem="nSa-Yf-ogd" secondAttribute="trailing" constant="-374" id="BEn-TA-ihi"/>
+                            <constraint firstItem="JU0-Sy-JCg" firstAttribute="leading" secondItem="aHt-eY-W7v" secondAttribute="leading" constant="20" id="McX-MO-elZ"/>
+                            <constraint firstItem="JU0-Sy-JCg" firstAttribute="top" secondItem="qjb-hv-b8Y" secondAttribute="bottom" constant="20" id="MyL-C1-IFQ"/>
+                            <constraint firstItem="nSa-Yf-ogd" firstAttribute="leading" secondItem="aHt-eY-W7v" secondAttribute="leading" constant="20" id="bzY-hO-0pH"/>
+                            <constraint firstItem="nSa-Yf-ogd" firstAttribute="top" secondItem="JU0-Sy-JCg" secondAttribute="bottom" constant="20" id="dR6-Wi-I6h"/>
+                            <constraint firstItem="aHt-eY-W7v" firstAttribute="trailing" secondItem="JU0-Sy-JCg" secondAttribute="trailing" constant="20" id="e4c-Rf-LPY"/>
+                            <constraint firstItem="aHt-eY-W7v" firstAttribute="trailing" secondItem="nSa-Yf-ogd" secondAttribute="trailing" constant="20" id="exV-qq-u3b"/>
+                            <constraint firstItem="qjb-hv-b8Y" firstAttribute="top" secondItem="aHt-eY-W7v" secondAttribute="top" id="nhg-pO-Wpm"/>
+                            <constraint firstItem="aHt-eY-W7v" firstAttribute="trailing" secondItem="qjb-hv-b8Y" secondAttribute="trailing" id="o1b-Ii-5dQ"/>
+                            <constraint firstItem="tWI-qI-UC7" firstAttribute="top" secondItem="nSa-Yf-ogd" secondAttribute="bottom" constant="20" id="oZm-kS-2je"/>
+                            <constraint firstItem="tWI-qI-UC7" firstAttribute="trailing" secondItem="nSa-Yf-ogd" secondAttribute="trailing" id="sjq-lI-L1f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aHt-eY-W7v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Peripheral Detail" id="XFF-ud-sEB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCT-l9-YUe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3265.217391304348" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6af-t9-HgJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yz8-wD-acB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YiA-TZ-hfk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OAz-wc-NEN" kind="relationship" relationship="rootViewController" id="9tJ-IQ-UD6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dv-0G-NFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="khL-nQ-P9I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PNw-7Z-4ok" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wUZ-aW-GT3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hU9-wJ-S7U" kind="relationship" relationship="rootViewController" id="WB9-FB-RKv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4e-cb-DEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2353.6231884057975" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
